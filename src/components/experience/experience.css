@@ -1,0 +1,110 @@
+.experience {
+  background: #1c1c1c;
+  padding: 50px 20px;
+  border-top: 1px solid  wheat;
+
+}
+
+.headingExperience {
+  text-align: start;
+    font-size: 37px;
+    padding: 50px 10px 10px 80px;
+    color: white; 
+}
+
+.contentExperience {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+}
+
+.experienceItem {
+  background-color: #c2b5a0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  max-width: 400px;
+  width: calc(50% - 40px);
+  color: rgb(0, 0, 0);
+  transition: box-shadow 0.3s ease;
+}
+
+.experienceItem:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+  margin-bottom: 25px;
+}
+
+.year {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.company {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.position {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fdfdfd;
+}
+
+
+@media (max-width: 768px) {
+  .headingExperience{
+    font-size: 50px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .experienceItem {
+    width: calc(100% - 40px);
+  }
+
+  .headingExperience {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .year, .company, .position, .description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .headingExperience {
+    font-size: 24px;
+  }
+
+  .year {
+    font-size: 18px;
+  }
+
+  .company {
+    font-size: 18px;
+  }
+
+  .position {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+}

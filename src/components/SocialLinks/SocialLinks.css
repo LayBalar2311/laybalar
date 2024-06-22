@@ -1,0 +1,84 @@
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between icons */
+    padding: 20px 0;
+    background: #1c1c1c;
+    border-top: 1px solid wheat;
+}
+
+.social-logo-wrapper1 {
+    display: inline-block;
+    padding: 2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f3ec78, #af4261, #42a1ec, #ce9bdc);
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
+}
+
+.social-logo-wrapper2 {
+    display: inline-block;
+    padding: 2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #2a7943, #ff1658, #bbbbbb, #42ec56);
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
+}
+
+.social-logo-wrapper3 {
+    display: inline-block;
+    padding: 2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7457c5, #11a54c, #6767c1, #42ec56);
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
+}
+
+.social-logo-wrapper4 {
+    display: inline-block;
+    padding: 2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f41818, #9611a5, #2c9db1, #5005ff);
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.social-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Make the images circular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block; /* Ensure the image fits within the wrapper */
+}
+
+.social-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .links {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .social-logo {
+        width: 35px;
+        height: 35px;
+    }
+}

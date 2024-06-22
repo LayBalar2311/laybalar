@@ -1,0 +1,70 @@
+/* messagebox.css */
+
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d3c9c9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 700px;
+    
+    max-width: 90%;
+}
+
+.message-box-content {
+    text-align: center;
+}
+
+.message-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #440404;
+}
+
+.message-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    height: 400px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container button[type="submit"] {
+    background-color: #ededed;
+    color: #000000;
+}
+
+.button-container button[type="submit"]:hover {
+    background-color: #dcc9c9;
+    color: rgb(255, 255, 255);
+    border: 1px solid wheat;
+}
+
+.button-container button[type="button"] {
+    background-color: #eee;
+    color: #000000;
+}
+
+.button-container button[type="button"]:hover {
+    background-color: #ccc;
+}

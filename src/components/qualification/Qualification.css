@@ -1,0 +1,149 @@
+.Qualification {
+    height: auto;
+    background: #1c1c1c;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid  wheat;
+
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.headingQualification {
+    text-align: start;
+    font-size: 40px;
+    padding: 50px 10px 10px 80px;
+    color: white;
+}
+
+.contantQalification {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.clg,
+.school {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    background-color: #D5CEA3;
+    padding: 60px;
+    height: 300px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.clg:hover,
+.school:hover {
+    transform: translateY(-5px);
+}
+
+.year,
+.grade {
+    font-size: 1.75rem;
+    text-align: center;
+    opacity: 1;
+    padding-top: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.clg:hover .year,
+.clg:hover .grade,
+.school:hover .year,
+.school:hover .grade {
+    opacity: 0.2;
+}
+
+
+.clg:hover .name,
+.school:hover .name {
+    opacity: 1;
+}
+.details a{
+    text-decoration: none;
+    color: black;
+}
+.details {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(214, 165, 165, 0.9);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.clg:hover .details,
+.school:hover .details {
+    display: block;
+    opacity: 1;
+    width: 100%;
+}
+
+
+.clgname,
+.schoolname {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.uniname {
+    font-size: 1rem;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .contantQalification {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .clg,
+    .school {
+        margin: 10px;
+        width: 45%;
+    }
+
+    .headingQualification {
+        font-size: 3rem;
+        text-align: start;
+    }
+}
+
+@media (max-width: 767px) {
+    .headingQualification {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .contantQalification {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .year,
+    .name {
+        text-align: center;
+    }
+}
