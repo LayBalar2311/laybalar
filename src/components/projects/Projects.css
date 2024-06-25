@@ -13,112 +13,57 @@
 
 .contentProject {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 20px;
-    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .project {
-    margin: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    width: 100%;
-    max-width: 700px;
-    border-radius: 20px;
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.project.animate {
-    transform: translateX(0);
-    opacity: 1;
+    width: 30%;
+    margin: 20px 0;
+    position: relative;
 }
 
 .video-container {
     position: relative;
-    background-color: #E8D8C4;
     width: 100%;
-    height: 0;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
-    overflow: hidden;
-    border-radius: 20px;
 }
 
-.video-container video {
+.noControllers {
+    border-radius: 10px;
+}
+
+.hovertext {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease;
-}
-
-.video-container .hovertext {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 0%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    transform: translate(-10%, -10%);
-    font-size: 30px;
-    color: rgb(0, 0, 0);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
     opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.video-container:hover video {
-    opacity: 0.1;
-    background-color: rgb(124, 0, 60);
+    transition: opacity 0.3s ease-in-out;
 }
 
 .video-container:hover .hovertext {
     opacity: 1;
-    font-weight: bold;
 }
 
-.noControllers {
-    pointer-events: none;
+.github-icon {
+    margin-top: 10px;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    background-color: aliceblue;
 }
 
-@media (max-width: 768px) {
-    .headingProject {
-        font-size: 40px;
-        padding: 20px 10px;
-        text-align: center;
-    }
-
-    .contentProject {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project {
-        width: 80%;
-        max-width: 300px;
-    }
-
-    .video-container .hovertext {
-        font-size: 20px;
-    }
+.animate {
+    transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 480px) {
-    .headingProject {
-        font-size: 30px;
-    }
-
-    .project {
-        width: 90%;
-        max-width: 250px;
-    }
-
-    .video-container .hovertext {
-        font-size: 20px;
-    }
+.animate:hover {
+    transform: scale(1.05);
 }

@@ -8,7 +8,7 @@ const Experience = () => {
       <div className="contentExperience">
         <div className="experienceItem">
           <div className="top">
-            <p className="year">Feb '24 - Jul '24</p>
+            <p className="year">Jan '24 - Jul '24</p>
             <p className="company">Flutter Developer</p>
             <p className="position"> Zeronsys LLP</p>
           </div>

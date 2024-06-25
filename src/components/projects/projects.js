@@ -5,7 +5,6 @@ import videoFile2 from './diaryapp.mp4';
 import videoFile3 from './login.mp4';
 import github from '../../logo/github.png';
 
-
 const Projects = () => {
     const project1Ref = useRef(null);
     const project2Ref = useRef(null);
@@ -39,7 +38,12 @@ const Projects = () => {
                             <source src={videoFile} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-                        <p className="hovertext">A E-Commerce website with admin panel.<br/> Technology used: PHP, MYSQL Database</p>
+                        <div className="hovertext">
+                            <p>A E-Commerce website with admin panel.<br/> Technology used: PHP, MYSQL Database</p>
+                            <a href="https://github.com/LayBalar2311/ECOMMERCE-Website-PHP.git" target="_blank">
+                            <img src={github} alt="GitHub" className="github-icon" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className="project" ref={project2Ref}>
@@ -48,7 +52,12 @@ const Projects = () => {
                             <source src={videoFile2} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-                        <p className="hovertext">Diary and Reminder Application. <br/>Technology used: Flutter, Dart, SQLite Database</p>
+                        <div className="hovertext">
+                            <p>Diary and Reminder Application. <br/>Technology used: Flutter, Dart, SQLite Database</p>
+                            <a href="https://github.com/LayBalar2311/Diary-and-Reminder-Flutter-App.git" target="_blank">
+                            <img src={github} alt="GitHub" className="github-icon" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className="project" ref={project3Ref}>
@@ -57,8 +66,12 @@ const Projects = () => {
                             <source src={videoFile3} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-                        <p className="hovertext">Login OTP Authentication Application. <br/>Technology used: Flutter, Dart, Firestore Database</p>
-                        
+                        <div className="hovertext">
+                            <p>Login OTP Authentication Application. <br/>Technology used: Flutter, Dart, Firestore Database</p>
+                            <a href="https://github.com/LayBalar2311/Flutter-OTP-System.git" target="_blank">
+                            <img src={github} alt="GitHub" className="github-icon" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
