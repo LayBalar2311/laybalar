@@ -67,3 +67,89 @@
 .animate:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .headingProject {
+        font-size: 2rem;
+        padding: 20px 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .headingProject {
+        font-size: 2rem;
+        padding: 20px 10px 10px 20px;
+    }
+}
+
+.contentProject {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 30%;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Adjust project width for smaller screens */
+@media (max-width: 1024px) {
+    .project {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+}
+
+.noControllers {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hovertext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.video-container:hover .hovertext {
+    opacity: 1;
+}
+
+.github-icon {
+    margin-top: 10px;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.animate {
+    transition: transform 0.3s ease-in-out;
+}
+
+.animate:hover {
+    transform: scale(1.05);
+}

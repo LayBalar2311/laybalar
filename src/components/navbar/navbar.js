@@ -13,7 +13,7 @@ const Navbar = () => {
     const [textIndex, setTextIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
 
-    const textsToType = ["Web Developer ", "App Developer  ", ];
+    const textsToType = ["Flutter Developer ", "App Developer  ", ];
     const typingSpeed = 200;
     const erasingSpeed = 100;
     const newTextDelay = 3000;
